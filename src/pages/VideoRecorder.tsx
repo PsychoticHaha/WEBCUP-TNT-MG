@@ -3,6 +3,7 @@ import videojs from "video.js"
 import "video.js/dist/video-js.min.css"
 import "videojs-record/dist/css/videojs.record.min.css"
 import "videojs-record/dist/videojs.record"
+import  CustomEmojiPicker  from "../Emojis/CustomEmojiPicker";
 
 
 export enum RecorderModeEnum {
@@ -93,6 +94,7 @@ const VideoRecorder: React.FC<VideoRecorderProps> = ({ id, mode }) => {
         playsInline
         className="video-js vjs-default-skin rounded-lg w-[400px] md:w-[620px] lg:w-[920px] h-[300px] md:h-[400px] lg:h-[520px]"
       />
+      <CustomEmojiPicker/>
     </div>
   )
 }
