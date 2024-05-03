@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Navigate } from "react-router-dom";
 import "./../../assets/stylesheets/Login-signUp.scss";
-import Navbar from "../../components/Navbar";
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [login, setLogin] = useState(false);
+  const checkRef = useRef();
 
   const handleChange = (e) => {
     setUsername(e.target.value);
@@ -28,15 +28,24 @@ function Login() {
       }
     }
   }
+
+  const handleShow = () => {
+    let input = checkRef.current; 
+    input.type == "text" ? input.type = "password" : input.type = "text";
+  }
+
   return (
-    <div>
+    <div className="form-container">
       {login && <Navigate to={"/dashbord"} />}
-      <Navbar />
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
-        <label htmlFor="username">Nom :</label>
-        <input type="text" name="username" value={username} onChange={handleChange} />
+        <label htmlFor="username">Nom d&apos;utilisateur :</label>
+        <input type="text" id="username" name="username" value={username} onChange={handleChange} />
         <label htmlFor="pass">Mot de passe :</label>
-        <input type="text" name="password" value={password} onChange={handleChangePwd} />
+        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} />
+        <div className="check show">
+          <input type="checkbox" id="show" onChange={handleShow} />
+          <label htmlFor="show" className="checkbox">Afficher mot de passe</label>
+        </div>
         <button>Se connecter</button>
       </form>
     </div>
@@ -44,19 +53,3 @@ function Login() {
 }
 
 export default Login;
-
-// JS TSOTRA
-// const loginForm = document.getElementById('login-form');
-// loginForm.addEventListener('submit', (e)=>{handleSubmit(e)})
-
-// function handleSubmit(e) {
-//   const usernameInput = document.querySelector('#username');
-//   const usernameValue = usernameInput.value;
-//   const passwordInput = document.querySelector('#password');
-//   const passwordValue = passwordInput.value;
-//   e.preventDefault();
-//   if (username === realUsername) {
-//     password === realPassword ? setLogin(true) : setLogin(false);
-//   }
-
-// }

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "price": 29.99,
+    "name": "Bague dorée King de Ken",
+    "img_path": "/assets/images/ken/2-chaise.webp"
+  },
+  {
+    "id": 3,
+    "description": "Duis bibendum arcu in diam lacinia, non bibendum augue condimentum.",
+    "price": 39.99,
+    "name": "Product 3",
+    "img_path": "path/to/image3.jpg"
+  }
+]
