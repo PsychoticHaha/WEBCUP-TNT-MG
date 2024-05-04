@@ -39,9 +39,9 @@ function Login() {
       {login && <Navigate to={"/dashbord"} />}
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
         <label htmlFor="username">Nom d&apos;utilisateur :</label>
-        <input type="text" id="username" name="username" value={username} onChange={handleChange} />
+        <input type="text" id="username" name="username" value={username} onChange={handleChange} placeholder="ex : kenlebg@ego.fr" />
         <label htmlFor="pass">Mot de passe :</label>
-        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} />
+        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} placeholder="Entrez votre mot de passe..."/>
         <div className="check show">
           <input type="checkbox" id="show" onChange={handleShow} />
           <label htmlFor="show" className="checkbox">Afficher mot de passe</label>

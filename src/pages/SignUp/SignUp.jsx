@@ -36,9 +36,9 @@ function SignUp() {
       {login && <Navigate to="/connexion" />}
       <form className="parent" action="" onSubmit={handleSubmit}>
         <label htmlFor="pseudo">Entrez votre pseudo</label>
-        <input type="text" id="pseudo" placeholder="ex : Jean Beau Gosse" />
+        <input type="text" id="pseudo" placeholder="ex : KEN Le King" />
         <label htmlFor="mail">Adresse e-mail :</label>
-        <input type="mail" id="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="ex : jean@qqch.com" />
+        <input type="mail" id="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="ex : ken.bg@ego.fr" />
         <label htmlFor="password">Mot de passe :</label>
         <input type="password" id="password" name="password" value={password} onChange={handleChangePwd} placeholder="Entrez mot de passe ..." />
         <label htmlFor="passConfirm">Confirmation de mot de passe :</label>

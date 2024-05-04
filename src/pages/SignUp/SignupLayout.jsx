@@ -2,6 +2,8 @@ import Navbar from "../../components/Navbar";
 import SignUp from "./SignUp"
 
 function SignupLayout() {
+  document.title = "Inscription | Site de KEN"
+
   return (
     <div className='main'>
       <Navbar text="Aller se connecter" link="/connexion" />
