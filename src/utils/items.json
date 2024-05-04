@@ -1,16 +1,160 @@
 [
   {
     "id": 1,
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "description": "Découvrez notre chaise élégante et confortable, alliant design contemporain et qualité supérieure pour une expérience d'assise incomparable.",
     "price": 29.99,
     "name": "Bague dorée King de Ken",
     "img_path": "/assets/images/ken/2-chaise.webp"
   },
   {
-    "id": 3,
-    "description": "Duis bibendum arcu in diam lacinia, non bibendum augue condimentum.",
+    "id": 2,
+    "description": "Découvrez notre chaise élégante et confortable, alliant design contemporain et qualité supérieure pour une expérience d'assise incomparable.",
     "price": 39.99,
+    "name": "voiture",
+    "img_path": "/assets/images/ken/4x4.webp"
+  },
+  {
+    "id": 3,
+    "description": "Plongez dans un monde d'excitation et de divertissement avec notre amus captivant, offrant des défis stimulants, des moments de rire et une expérience inoubliable pour tous.",
+    "price": 29.99,
+    "name": "amus royale",
+    "img_path": "/assets/images/ken/amus.webp"
+  },
+  {
+    "id": 4,
+    "description": "Découvrez notre enceinte haute performance, offrant un son cristallin, des basses profondes et une connectivité sans faille pour une expérience audio immersive incomparable, que ce soit pour la musique, les films ou les jeux",
+    "price": 29.99,
     "name": "Product 3",
-    "img_path": "path/to/image3.jpg"
+    "img_path": "/assets/images/ken/baffle.webp"
+  },
+  {
+    "id": 5,
+    "description": "Éblouissez-vous avec notre bague pour femme, magnifiquement conçue avec des matériaux de qualité supérieure, ornée de délicats détails et de pierres précieuses scintillantes, ajoutant une touche d'élégance et de sophistication à chaque tenue.",
+    "price": 29.99,
+    "name": "Product 3",
+    "img_path": "/assets/images/ken/bague-femme.webp"
+  },
+  {
+    "id": 6,
+    "description": "Distinguez-vous avec notre bague pour homme, un symbole de masculinité et de style, fabriquée avec des matériaux robustes et une conception élégante, ajoutant une touche de raffinement à votre look quotidien.",
+    "price": 29.99,
+    "name": "une bague d'une valeur inestimable",
+    "img_path": "/assets/images/ken/bague-femme.webp"
+  },
+  {
+    "id": 7,
+    "description": "Détendez-vous avec style sur notre canapé, alliant confort et élégance pour des moments agréables à partager.",
+    "price": 29.99,
+    "name": "Canap confortable",
+    "img_path": "/assets/images/ken/bague-homme.webp"
+  },
+  {
+    "id": 8,
+    "description": "Éveillez l'imagination avec notre cheval en bois, un jouet intemporel qui incite au jeu créatif et offre des heures de divertissement authentique.",
+    "price": 29.99,
+    "name": "Cheval en bois",
+    "img_path": "/assets/images/ken/canap.webp"
+  },
+  {
+    "id": 9,
+    "description": "Voyagez avec style dans notre Corvette rose, fusion parfaite de puissance et de féminité, attirant tous les regards sur la route",
+    "price": 29.99,
+    "name": "covervette de couleur rose",
+    "img_path": "/assets/images/ken/cheval.webp"
+  },
+  {
+    "id": 10,
+    "description": "Voyagez avec style dans notre Corvette rose, fusion parfaite de puissance et de féminité, attirant tous les regards sur la route",
+    "price": 29.99,
+    "name": "covertte rose",
+    "img_path": "/assets/images/corvette.webp"
+  },
+  {
+    "id": 11,
+    "description": "Transformez votre espace en piste de danse avec notre tapis disco, illuminant chaque pas de lumière et d'énergie pour une ambiance de fête inoubliable.",
+    "price": 29.99,
+    "name": "Tapis disco",
+    "img_path": "/assets/images/disco.webp"
+  },
+  {
+    "id": 12,
+    "description": "Découvrez notre garde-robe, un espace de rangement élégant et fonctionnel pour organiser votre style avec facilité et raffinement.",
+    "price": 29.99,
+    "name": "une garde robe",
+    "img_path": "/assets/images/garde-robe.webp"
+  },
+  {
+    "id": 13,
+    "description": "Découvrez l'aventure avec notre Jeep, le compagnon robuste et polyvalent pour explorer les routes les plus difficiles avec style et confiance.",
+    "price": 29.99,
+    "name": "un jeep",
+    "img_path": "/assets/images/jeep.webp"
+  },
+  {
+    "id": 14,
+    "description": "Réunissez-vous autour de notre table à manger, où chaque repas devient un moment de convivialité et de partage dans un cadre élégant et confortable.",
+    "price": 29.99,
+    "name": "une table à manger",
+    "img_path": "/assets/images/kitchen.webp"
+  },
+  {
+    "id": 15,
+    "description": "Réunissez-vous autour de notre table à manger, où chaque repas devient un moment de convivialité et de partage dans un cadre élégant et confortable.",
+    "price": 29.99,
+    "name": "kolier2",
+    "img_path": "/assets/images/kolier2.webp"
+  },
+  {
+    "id": 16,
+    "description": "Sublimez votre élégance avec notre collier, un bijou raffiné qui ajoute une touche de glamour et de sophistication à chaque tenue.",
+    "price": 29.99,
+    "name": "kolier2",
+    "img_path": "/assets/images/kolier2.webp"
+  },
+  {
+    "id": 17,
+    "description": "Distinguez-vous avec notre collier, un accessoire de mode qui capture l'essence de l'élégance et du raffinement, rehaussant votre style avec une touche de sophistication.",
+    "price": 29.99,
+    "name": "kolier",
+    "img_path": "/assets/images/kolier.webp"
+  },
+  {
+    "id": 18,
+    "description": "Plongez dans le confort ultime avec notre lit, un sanctuaire de détente conçu pour vous offrir des nuits de sommeil réparatrices et des réveils revigorants.",
+    "price": 29.99,
+    "name": "kolier",
+    "img_path": "/assets/images/lit.webp"
+  },
+  {
+    "id": 19,
+    "description": "Plongez dans le confort ultime avec notre lit, un sanctuaire de détente conçu pour vous offrir des nuits de sommeil réparatrices et des réveils revigorants.",
+    "price": 29.99,
+    "name": "lit",
+    "img_path": "/assets/images/lit.webp"
+  },
+  {
+    "id": 19,
+    "description": "Découvrez notre maison, un refuge chaleureux et accueillant où chaque détail est pensé pour créer des souvenirs inoubliables et des moments de bonheur en famille.",
+    "price": 29.99,
+    "name": "maison",
+    "img_path": "/assets/images/maison.webp"
+  },
+  {
+    "id": 19,
+    "description": "Découvrez notre maison, un refuge chaleureux et accueillant où chaque détail est pensé pour créer des souvenirs inoubliables et des moments de bonheur en famille.",
+    "price": 29.99,
+    "name": "maison en rose",
+    "img_path": "/assets/images/maison-reel.webp"
+  },
+  {
+    "id": 19,
+    "description": ,
+    "price": 29.99,
+    "name": "maison en rose",
+    "img_path": [
+      "/assets/images/maison-reel.webp",
+      "/assets/images/maison.webp",
+      "/assets/images/maison-reel.webp"
+    ]
   }
 ]
