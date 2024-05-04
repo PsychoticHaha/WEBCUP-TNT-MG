@@ -2,91 +2,84 @@
   {
     "id": 1,
     "description": "Découvrez notre chaise élégante et confortable, alliant design contemporain et qualité supérieure pour une expérience d'assise incomparable.",
-    "price": 29.99,
-    "name": "Bague dorée King de Ken",
+    "price": "200 euros",
+    "name": "chaise à deux",
     "img_path": "/assets/images/ken/2-chaise.webp"
   },
   {
     "id": 2,
-    "description": "Découvrez notre chaise élégante et confortable, alliant design contemporain et qualité supérieure pour une expérience d'assise incomparable.",
-    "price": 39.99,
+    "description": "Découvrez le 4x4 ultime : robuste, polyvalent, prêt pour l'aventure. Conduisez en toute confiance, où que vous alliez.",
+    "price": "30OOO euros",
     "name": "voiture",
     "img_path": "/assets/images/ken/4x4.webp"
   },
   {
     "id": 3,
     "description": "Plongez dans un monde d'excitation et de divertissement avec notre amus captivant, offrant des défis stimulants, des moments de rire et une expérience inoubliable pour tous.",
-    "price": 29.99,
+    "price": "600 euros",
     "name": "amus royale",
     "img_path": "/assets/images/ken/amus.webp"
   },
   {
     "id": 4,
     "description": "Découvrez notre enceinte haute performance, offrant un son cristallin, des basses profondes et une connectivité sans faille pour une expérience audio immersive incomparable, que ce soit pour la musique, les films ou les jeux",
-    "price": 29.99,
-    "name": "Product 3",
+    "price": "200 euros",
+    "name": "baffle",
     "img_path": "/assets/images/ken/baffle.webp"
   },
   {
     "id": 5,
     "description": "Éblouissez-vous avec notre bague pour femme, magnifiquement conçue avec des matériaux de qualité supérieure, ornée de délicats détails et de pierres précieuses scintillantes, ajoutant une touche d'élégance et de sophistication à chaque tenue.",
-    "price": 29.99,
-    "name": "Product 3",
+    "price": "1000 euros",
+    "name": "bague pour femme",
     "img_path": "/assets/images/ken/bague-femme.webp"
   },
   {
     "id": 6,
     "description": "Distinguez-vous avec notre bague pour homme, un symbole de masculinité et de style, fabriquée avec des matériaux robustes et une conception élégante, ajoutant une touche de raffinement à votre look quotidien.",
-    "price": 29.99,
+    "price": "1OOO euros",
     "name": "une bague d'une valeur inestimable",
-    "img_path": "/assets/images/ken/bague-femme.webp"
+    "img_path": "/assets/images/ken/bague-homme.webp"
   },
   {
     "id": 7,
     "description": "Détendez-vous avec style sur notre canapé, alliant confort et élégance pour des moments agréables à partager.",
     "price": 29.99,
     "name": "Canap confortable",
-    "img_path": "/assets/images/ken/bague-homme.webp"
+    "img_path": "/assets/images/ken/canap.webp"
   },
   {
     "id": 8,
     "description": "Éveillez l'imagination avec notre cheval en bois, un jouet intemporel qui incite au jeu créatif et offre des heures de divertissement authentique.",
     "price": 29.99,
     "name": "Cheval en bois",
-    "img_path": "/assets/images/ken/canap.webp"
+    "img_path": "/assets/images/ken/cheval.webp"
   },
   {
     "id": 9,
     "description": "Voyagez avec style dans notre Corvette rose, fusion parfaite de puissance et de féminité, attirant tous les regards sur la route",
-    "price": 29.99,
+    "price": "1000000 euros",
     "name": "covervette de couleur rose",
-    "img_path": "/assets/images/ken/cheval.webp"
-  },
-  {
-    "id": 10,
-    "description": "Voyagez avec style dans notre Corvette rose, fusion parfaite de puissance et de féminité, attirant tous les regards sur la route",
-    "price": 29.99,
-    "name": "covertte rose",
-    "img_path": "/assets/images/corvette.webp"
+    "img_path": "/assets/images/ken/corvette.webp"
   },
   {
     "id": 11,
     "description": "Transformez votre espace en piste de danse avec notre tapis disco, illuminant chaque pas de lumière et d'énergie pour une ambiance de fête inoubliable.",
-    "price": 29.99,
+    "price": "200 euros",
     "name": "Tapis disco",
     "img_path": "/assets/images/disco.webp"
   },
   {
     "id": 12,
     "description": "Découvrez notre garde-robe, un espace de rangement élégant et fonctionnel pour organiser votre style avec facilité et raffinement.",
-    "price": 29.99,
+    "price": "300 euros",
     "name": "une garde robe",
     "img_path": "/assets/images/garde-robe.webp"
   },
   {
     "id": 13,
     "description": "Découvrez l'aventure avec notre Jeep, le compagnon robuste et polyvalent pour explorer les routes les plus difficiles avec style et confiance.",
-    "price": 29.99,
+    "price": "10000 euros",
     "name": "un jeep",
     "img_path": "/assets/images/jeep.webp"
   },
@@ -99,62 +92,93 @@
   },
   {
     "id": 15,
-    "description": "Réunissez-vous autour de notre table à manger, où chaque repas devient un moment de convivialité et de partage dans un cadre élégant et confortable.",
-    "price": 29.99,
-    "name": "kolier2",
-    "img_path": "/assets/images/kolier2.webp"
-  },
-  {
-    "id": 16,
     "description": "Sublimez votre élégance avec notre collier, un bijou raffiné qui ajoute une touche de glamour et de sophistication à chaque tenue.",
-    "price": 29.99,
-    "name": "kolier2",
+    "price": "150 euros",
+    "name": "table à manger",
     "img_path": "/assets/images/kolier2.webp"
   },
   {
     "id": 17,
     "description": "Distinguez-vous avec notre collier, un accessoire de mode qui capture l'essence de l'élégance et du raffinement, rehaussant votre style avec une touche de sophistication.",
-    "price": 29.99,
+    "price": "500 euros",
     "name": "kolier",
     "img_path": "/assets/images/kolier.webp"
   },
   {
     "id": 18,
     "description": "Plongez dans le confort ultime avec notre lit, un sanctuaire de détente conçu pour vous offrir des nuits de sommeil réparatrices et des réveils revigorants.",
-    "price": 29.99,
+    "price": "700 euros",
     "name": "kolier",
     "img_path": "/assets/images/lit.webp"
   },
   {
     "id": 19,
     "description": "Plongez dans le confort ultime avec notre lit, un sanctuaire de détente conçu pour vous offrir des nuits de sommeil réparatrices et des réveils revigorants.",
-    "price": 29.99,
+    "price": "300 euros",
     "name": "lit",
     "img_path": "/assets/images/lit.webp"
   },
   {
-    "id": 19,
+    "id": 20,
     "description": "Découvrez notre maison, un refuge chaleureux et accueillant où chaque détail est pensé pour créer des souvenirs inoubliables et des moments de bonheur en famille.",
-    "price": 29.99,
-    "name": "maison",
-    "img_path": "/assets/images/maison.webp"
-  },
-  {
-    "id": 19,
-    "description": "Découvrez notre maison, un refuge chaleureux et accueillant où chaque détail est pensé pour créer des souvenirs inoubliables et des moments de bonheur en famille.",
-    "price": 29.99,
-    "name": "maison en rose",
-    "img_path": "/assets/images/maison-reel.webp"
-  },
-  {
-    "id": 19,
-    "description": ,
-    "price": 29.99,
+    "price": "5OOOOOO euros",
     "name": "maison en rose",
     "img_path": [
       "/assets/images/maison-reel.webp",
       "/assets/images/maison.webp",
       "/assets/images/maison-reel.webp"
     ]
+  },
+  {
+    "id": 21,
+    "description": "Élégant et fonctionnel, notre miroir reflète votre style et illumine votre espace, ajoutant une touche de sophistication à votre décor",
+    "price": "10 euros",
+    "name": "miroir",
+    "img_path": "/assets/images/miroir.webp"
+  },
+  {
+    "id": 22,
+    "description": "Transformez votre corps avec notre équipement de musculation, conçu pour vous aider à atteindre vos objectifs de fitness et à sculpter votre silhouette avec puissance et détermination.",
+    "price": "400 euros",
+    "name": "musculation",
+    "img_path": [
+      "/assets/images/muscu.webp",
+      "/assets/images/muscu-1.webp"
+    ]
+  },
+  {
+    "id": 23,
+    "description": "Optimisez votre espace de travail avec notre pack bureau, réunissant fonctionnalité, confort et style pour une productivité accrue et un environnement professionnel inspirant.",
+    "price": "300 euros",
+    "name": "espace de travail",
+    "img_path": "/assets/images/pack-bureau.webp"
+  },
+  {
+    "id": 24,
+    "description": "Affichez votre style décontracté avec notre tee-shirt bleu, un basique polyvalent qui allie confort et élégance pour une allure impeccable en toute occasion.",
+    "price": "20 euros",
+    "name": "tee-shirt",
+    "img_path": "/assets/images/t-shirt bleu.webp"
+  },
+  {
+    "id": 25,
+    "description": "Créez une ambiance discothèque sur votre terrasse avec notre ensemble d'éclairage et de musique, pour des soirées endiablées sous les étoiles, où la fête ne s'arrête jamais.",
+    "price": "500 euros",
+    "name": "disco",
+    "img_path": "/assets/images/terasse disco.webp"
+  },
+  {
+    "id": 26,
+    "description": "Transformez votre terrasse en un salon confortable avec nos meubles d'extérieur élégants et luxueux, offrant un espace de détente idéal pour profiter des douces soirées en plein air avec style et confort.",
+    "price": "900 euros",
+    "name": "tee-shirt",
+    "img_path": "/assets/images/terasse.webp"
+  },
+  {
+    "id": 27,
+    "description": "Vivez le luxe de la conduite en plein air avec notre voiture décapotable, alliant puissance, élégance et sensation de liberté pour des trajets inoubliables sous le ciel ouvert.",
+    "price": "20000 euros",
+    "name": "voiture decapotable",
+    "img_path": "/assets/images/voiture.webp"
   }
 ]
