@@ -48,7 +48,7 @@ function Login() {
         </div>
         <button>Se connecter</button>
       </form>
-    </div>
+    </div> 
   );
 }
 

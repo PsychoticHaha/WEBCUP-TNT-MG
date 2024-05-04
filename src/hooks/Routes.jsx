@@ -3,6 +3,7 @@ import App from "./../App";
 import LoginLayout from './../pages/Login/LoginLayout'
 import SignUp from './../pages/SignUp/SignUp'
 import Navbar from "../components/Navbar";
+import SignupLayout from "../pages/SignUp/SignupLayout";
 
 const router = createBrowserRouter([
   {
@@ -10,8 +11,12 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/inscription",
+    path: "/connexion",
     element: <LoginLayout />
+  },
+  {
+    path: "/inscription",
+    element: <SignupLayout />
   },
   {
     path: "/signup",

@@ -42,9 +42,13 @@ div.main {
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 60%;
+        height: 70%;
         min-width: 400px;
         min-height: 400px;
+
+        &.signup {
+          min-height: 500px;
+        }
 
         form.parent {
           height: 100%;

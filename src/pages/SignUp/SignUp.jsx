@@ -19,7 +19,7 @@ function SignUp() {
     if (password === confirmPassword) {
       setConfirmPassword(e.target.value);
     } else {
-      alert("Les deux mots de passe ne corresponde pas");
+      alert("Les deux mots de passe ne correspondent pas");
     }
   }
   const handleSubmit = (e) => {
@@ -32,16 +32,18 @@ function SignUp() {
   }
 
   return (
-    <div>
+    <div className="form-container signup">
       {login && <Navigate to="/connexion" />}
       <form className="parent" action="" onSubmit={handleSubmit}>
-        <label htmlFor="mail" id="mail">Adresse E-mail :</label>
-        <input type="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="Veuillez taper votre adresse E-mail" />
-        <label htmlFor="password" id="password">Mot de passe :</label>
-        <input type="password" name="password" value={password} onChange={handleChangePwd} placeholder="Veuillez taper votre mot de passe" />
-        <label htmlFor="password" id="passConfirm">Confirmation de mot de passe :</label>
-        <input type="password" name="passConfirm" value={confirmPassword} onChange={handleConfirmPassword} placeholder="Confirmer le mot de passe" />
-        <button type="submit"> S'inscrire</button>
+        <label htmlFor="pseudo">Entrez votre pseudo</label>
+        <input type="text" id="pseudo" placeholder="ex : Jean Beau Gosse" />
+        <label htmlFor="mail">Adresse e-mail :</label>
+        <input type="mail" id="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="ex : jean@qqch.com" />
+        <label htmlFor="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" value={password} onChange={handleChangePwd} placeholder="Entrez mot de passe ..." />
+        <label htmlFor="passConfirm">Confirmation de mot de passe :</label>
+        <input type="password" id="passConfirm" name="passConfirm" value={confirmPassword} onChange={handleConfirmPassword} placeholder="Confirmez le mot de passe" />
+        <button type="submit"> S&apos;inscrire</button>
       </form>
     </div>
   )

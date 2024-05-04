@@ -5,7 +5,7 @@ import './../../assets/stylesheets/Login-Layout.scss'
 function LoginLayout() {
   return (
     <div className='main'>
-      <Navbar />
+      <Navbar text="Aller s'inscrire"  link="/inscription" />
       <div className="content">
         <div className="left">
           <div className="icon"></div>

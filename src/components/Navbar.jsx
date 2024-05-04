@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './../assets/stylesheets/navbar.scss';
 import Caddy from "./Caddy";
 
-function Navbar() {
+function Navbar({ text = "S'identifier", link = "/connexion" }) {
   const [logged] = useState(localStorage.getItem('logged'));
 
   return (
@@ -42,8 +42,8 @@ function Navbar() {
         {/* IF NOT LOGGED IN,  SHOW LOGIN BUTTON */}
         {!logged &&
           <div className="login-btn">
-            <Link to={"/login"}>
-              <div className="text login">S&apos;identifier</div>
+            <Link to={link}>
+              <div className="text login">{text}</div>
               <span className="login"></span>
             </Link>
           </div>
