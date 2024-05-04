@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
+import "./../../assets/stylesheets/Login-signUp.scss";
 
 function SignUp() {
   const [userMail, setUserMail] = useState('');
@@ -33,13 +34,14 @@ function SignUp() {
   return (
     <div>
       {login && <Navigate to="/connexion" />}
-      <form action="" onSubmit={handleSubmit}>
-        <label htmlFor="mail" id="mail">Adresse E-mail</label>
+      <form className="parent" action="" onSubmit={handleSubmit}>
+        <label htmlFor="mail" id="mail">Adresse E-mail :</label>
         <input type="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="Veuillez taper votre adresse E-mail" />
-        <label htmlFor="password" id="password">Mot de passe</label>
+        <label htmlFor="password" id="password">Mot de passe :</label>
         <input type="password" name="password" value={password} onChange={handleChangePwd} placeholder="Veuillez taper votre mot de passe" />
-        <label htmlFor="password" id="passConfirm">Confirmation de mot de passe</label>
+        <label htmlFor="password" id="passConfirm">Confirmation de mot de passe :</label>
         <input type="password" name="passConfirm" value={confirmPassword} onChange={handleConfirmPassword} placeholder="Confirmer le mot de passe" />
+        <button type="submit"> S'inscrire</button>
       </form>
     </div>
   )

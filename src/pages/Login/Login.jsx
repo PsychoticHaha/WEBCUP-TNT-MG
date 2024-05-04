@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
+import "./../../assets/stylesheets/Login-signUp.scss";
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -26,10 +27,10 @@ function Login() {
     <div>
       {login && <Navigate to={"/dashbord"} />}
       <h1>NAVBAR FROM FANASINA</h1>
-      <form id="login-form" action="" onSubmit={handleSubmit}>
-        <label htmlFor="username">Nom</label>
+      <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
+        <label htmlFor="username">Nom :</label>
         <input type="text" name="username" value={username} onChange={handleChange} />
-        <label htmlFor="pass">Mot de passe</label>
+        <label htmlFor="pass">Mot de passe :</label>
         <input type="text" name="password" value={password} onChange={handleChangePwd} />
         <button>Se connecter</button>
       </form>
