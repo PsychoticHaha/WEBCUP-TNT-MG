@@ -20,7 +20,11 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username === realUsername) {
-      password === realPassword ? setLogin(true) : setLogin(false);
+      if (password === realPassword) {
+        setLogin(true)
+      } else {
+        setLogin(false);
+      }
     }
   }
   return (
@@ -40,18 +44,18 @@ function Login() {
 
 export default Login;
 
- // JS TSOTRA
-  // const loginForm = document.getElementById('login-form');
-  // loginForm.addEventListener('submit', (e)=>{handleSubmit(e)})
+// JS TSOTRA
+// const loginForm = document.getElementById('login-form');
+// loginForm.addEventListener('submit', (e)=>{handleSubmit(e)})
 
-  // function handleSubmit(e) {
-  //   const usernameInput = document.querySelector('#username');
-  //   const usernameValue = usernameInput.value;
-  //   const passwordInput = document.querySelector('#password');
-  //   const passwordValue = passwordInput.value;
-  //   e.preventDefault();
-  //   if (username === realUsername) {
-  //     password === realPassword ? setLogin(true) : setLogin(false);
-  //   }
+// function handleSubmit(e) {
+//   const usernameInput = document.querySelector('#username');
+//   const usernameValue = usernameInput.value;
+//   const passwordInput = document.querySelector('#password');
+//   const passwordValue = passwordInput.value;
+//   e.preventDefault();
+//   if (username === realUsername) {
+//     password === realPassword ? setLogin(true) : setLogin(false);
+//   }
 
-  // }
+// }
