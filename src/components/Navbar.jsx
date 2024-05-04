@@ -7,50 +7,82 @@ function Navbar({ text = "S'identifier", link = "/connexion" }) {
   const [logged] = useState(localStorage.getItem('logged'));
 
   return (
-    <header>
-      <div className="wrapper">
-        <nav>
-          <Link to={"/vente-live"}>
-            <div className="text">
-              Ventes en live
-            </div>
-            <span></span>
-          </Link>
-          <Link to={"/biens"}>
-            <div className="text">
-              Mes biens
-            </div>
-            <span></span>
-          </Link>
-          <Link to={"/about"}>
-            <div className="text">
-              À propos
-            </div>
-            <span></span>
-          </Link>
-        </nav>
-        <Link className="logo-container" to={"/"}>
-          <div className="logo"></div>
-        </Link>
-
-        {/* IF LOGGED IN,  SHOW CADDY BUTTON */}
-        {logged &&
-          <div className="caddy-container">
-            <Caddy />
-          </div>
-        }
-        {/* IF NOT LOGGED IN,  SHOW LOGIN BUTTON */}
-        {!logged &&
-          <div className="login-btn">
-            <Link to={link}>
-              <div className="text login">{text}</div>
-              <span className="login"></span>
+    <>
+      <header>
+        <div className="wrapper">
+          <nav>
+            <Link to={"/vente-live"}>
+              <div className="text">
+                Ventes en live
+              </div>
+              <span></span>
             </Link>
-          </div>
-        }
-      </div>
-    </header>
+            <Link to={"/biens"}>
+              <div className="text">
+                Mes biens
+              </div>
+              <span></span>
+            </Link>
+            <Link to={"/a-propos"}>
+              <div className="text">
+                À propos
+              </div>
+              <span></span>
+            </Link>
+          </nav>
+          <Link className="logo-container" to={"/"}>
+            <div className="logo"></div>
+          </Link>
+
+          {/* IF LOGGED IN,  SHOW CADDY BUTTON */}
+          {logged &&
+            <div className="caddy-container">
+              <Caddy />
+            </div>
+          }
+          {/* IF NOT LOGGED IN,  SHOW LOGIN BUTTON */}
+          {!logged &&
+            <div className="login-btn">
+              <Link to={link}>
+                <div className="text login">{text}</div>
+                <span className="login"></span>
+              </Link>
+            </div>
+          }
+          <BurgerMenu MobileMenu={<MobileMenu />} />
+        </div>
+      </header>
+      <MobileMenu />
+    </>
   );
 }
+function MobileMenu({ cssClass = "mobile-menu" }) {
+  return (
+    <div className={cssClass}>
+      <Link to="/vente-live" className="link">Ventes en live</Link>
+      <Link to="/biens" className="link">Mes biens</Link>
+      <Link to="/a-propos" className="link">À propos</Link>
+    </div>
+  )
+}
 
+function BurgerMenu() {
+
+  const [burgerClass, setClassName] = useState('hamburger-menu');
+
+  const handleBurger = () => {
+    const MobileMenu = document.querySelector('.mobile-menu');
+    const Css = MobileMenu.classList;
+    Css.contains('show') ? Css.remove('show') : Css.add('show');
+    burgerClass == "hamburger-menu" ? setClassName('hamburger-menu clicked') : setClassName('hamburger-menu');
+  }
+
+  return (
+    <div className={burgerClass} onClick={handleBurger}>
+      <div className="top bar"></div>
+      <div className="middle bar"></div>
+      <div className="bottom bar"></div>
+    </div>
+  )
+}
 export default Navbar;

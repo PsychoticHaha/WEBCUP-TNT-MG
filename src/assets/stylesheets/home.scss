@@ -1,57 +1,176 @@
 main.home-content {
-  // background-color: red;
   min-height: 70vh;
-  height: 50vh;
+  height: max(100vh, fit-content);
   width: 100%;
 
-  section.hero {
+  section {
     display: flex;
     width: 100%;
     height: 100%;
+    min-height: 600px;
 
     .left {
       width: 50%;
       display: flex;
+      flex-direction: column;
+      gap: 20px;
       justify-content: center;
       align-items: center;
-
-      img {
-        min-width: 300px;
-        max-width: 500px;
-        border-radius: 20px;
-      }
     }
 
     .right {
       width: 50%;
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 15px;
+      align-items: center;
+      gap: 25px;
+    }
 
-      .text {
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+      width: 80%;
+      text-align: justify;
+
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        max-width: 90%;
+        padding-left: 15px;
+      }
+
+      &.products-list {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .cta {
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      cursor: pointer;
+
+      a {
+        background-color: #3b0928;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        color: #e8e8e8;
+        border-radius: 10px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #d31a8c;
+        }
+      }
+    }
+
+    img {
+      min-width: 300px;
+      max-width: 500px;
+      border-radius: 20px;
+    }
+
+    &.hero {
+      padding-bottom: 60px;
+    }
+
+    &.products {
+      min-height: 800px;
+      height: fit-content;
+      flex-direction: column;
+      gap: 50px;
+      padding-bottom: 60px;
+
+      .dot {
+        width: 30px;
+        height: 10px;
+        border-radius: 20px;
+        background-color: #d31a8c;
+      }
+
+      p {
         display: flex;
-        flex-direction: column;
-        align-items: start;
+        align-items: center;
         gap: 10px;
-        width: 80%;
-        text-align: justify;
+      }
 
-        h1 {
-          font-size: 35px;
+      .list-container {
+        height: 100%;
+        display: flex;
+        align-items: start;
+
+        .left {
+          height: 100%;
+          width: 50%;
         }
 
-        p {
-          max-width: 80%;
+        .right {
+          width: 50%;
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
         }
       }
 
       .cta {
-        width: fit-content;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: #d31a8c;
+        align-self: center;
+        width: 40%;
+        border-radius: 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: #3b0928;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+
+        .text {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          z-index: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .filling {
+          border-radius: 150px;
+          transition: 0.5s;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          transform: scale(0);
+          z-index: 1;
+        }
+
+        &:hover {
+          background-color: #d31a8c;
+          color: #000000;
+          font-weight: 600;
+          border-radius: 150px;
+
+          .filling {
+            background-color: #00a8e0;
+            transform: scale(1);
+            border-radius: none;
+          }
+        }
       }
     }
   }
@@ -84,5 +203,55 @@ main.home-content {
     color: #008060;
     background-color: #e8e8e8;
     padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width : 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main.home-content {
+    section {
+      height: fit-content;
+      gap: 30px;
+
+      .left {
+        width: 100%;
+      }
+
+      .right {
+        width: 100%;
+      }
+
+      .cta {
+        width: 80%;
+      }
+
+      flex-direction: column;
+
+      &.story {
+        flex-direction: column-reverse;
+      }
+
+      &.products {
+        padding: 60px 0;
+
+        .list-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+
+          .left {
+            width: 80%;
+          }
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
   }
 }
