@@ -3,6 +3,7 @@ import Login from './Login';
 import './../../assets/stylesheets/Login-Layout.scss'
 
 function LoginLayout() {
+  document.title = "Connexion | Site de KEN"
   return (
     <div className='main'>
       <Navbar text="Aller s'inscrire"  link="/inscription" />

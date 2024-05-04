@@ -12,13 +12,13 @@ function Navbar({ text = "S'identifier", link = "/connexion" }) {
         <nav>
           <Link to={"/vente-live"}>
             <div className="text">
-              Vente live
+              Ventes en live
             </div>
             <span></span>
           </Link>
           <Link to={"/biens"}>
             <div className="text">
-              Les biens
+              Mes biens
             </div>
             <span></span>
           </Link>
