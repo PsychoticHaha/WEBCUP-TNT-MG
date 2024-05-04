@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import "./../../assets/stylesheets/Login-signUp.scss";
+import Navbar from "../../components/Navbar";
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -30,7 +31,7 @@ function Login() {
   return (
     <div>
       {login && <Navigate to={"/dashbord"} />}
-      <h1>NAVBAR FROM FANASINA</h1>
+      <Navbar />
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
         <label htmlFor="username">Nom :</label>
         <input type="text" name="username" value={username} onChange={handleChange} />

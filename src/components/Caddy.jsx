@@ -7,7 +7,7 @@ export default function Caddy() {
   return (
     <div className="caddy">
       <div className="badge">
-        {/* {caddyContent && caddyContent} */} 1
+        {caddyContent && caddyContent}
       </div>
       <div className="icon"></div>
     </div>
