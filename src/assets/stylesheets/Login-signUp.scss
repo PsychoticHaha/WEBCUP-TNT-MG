@@ -4,14 +4,30 @@
   color: black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   background-color: white;
   border-radius: 10px;
+  border: 1px solid #a8a8a8;
 
-  input,
-  label {
+  input:not([type="checkbox"]) {
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid #a8a8a8;
+    padding-left: 10px;
+
+    &:focus {
+      outline: 2px solid #d31a8c;
+      border: 2px solid #d31a8c;
+    }
+  }
+
+  label:not(.checkbox) {
     padding: 5px;
+    width: 90%;
   }
 
   button {
