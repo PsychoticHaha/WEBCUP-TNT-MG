@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import "./../../assets/stylesheets/Login-signUp.scss";
+import { toast } from "react-hot-toast";
 
 function SignUp() {
   const [userMail, setUserMail] = useState('');
@@ -31,7 +32,7 @@ function SignUp() {
         localStorage.setItem('logged', true);
         setLogin(true);
       } else {
-        alert("Les deux mots de passe ne correspondent pas");
+        toast.error("Les deux mots de passe ne correspondent pas");
       }
     } else {
       setLogin(false);

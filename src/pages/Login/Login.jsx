@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import { Navigate } from "react-router-dom";
 import "./../../assets/stylesheets/Login-signUp.scss";
+import { toast } from "react-hot-toast";
+
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -26,10 +28,10 @@ function Login() {
         setLogin(true)
       } else {
         setLogin(false);
-        alert('Veuillez réessayer à nouveau.')
+        toast.error('Veuillez réessayer à nouveau.')
       }
     } else {
-      alert('Veuillez réessayer à nouveau.')
+      toast.error('Veuillez réessayer à nouveau.')
     }
   }
 
