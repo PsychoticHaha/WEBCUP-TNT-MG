@@ -6,7 +6,7 @@ function About() {
   document.title = "À propos du site | KEN"
   return (
     <>
-      <Navbar />
+      <Navbar text={localStorage.getItem('logged') ? "Se déconnecter" : "Se connecter"} />
       <section className="about-sections">
         <div className="left">
           <img src="/assets/images/home/dispute.webp" alt="Barbie et Ken se disputent" />

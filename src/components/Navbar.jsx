@@ -12,8 +12,16 @@ function Navbar({ text = "Se connecter", link = "/connexion" }) {
     } else {
       setLogged(false);
     }
+    return () => { }
   }, [logged])
-
+  
+  const handleClick = () => {
+    if (text == "Se déconnecter") {
+      localStorage.removeItem('logged');
+    } else {
+      return;
+    }
+  }
   return (
     <>
       <header>
@@ -57,7 +65,7 @@ function Navbar({ text = "Se connecter", link = "/connexion" }) {
           }
           {/* IF NOT LOGGED IN,  SHOW LOGIN BUTTON */}
           {!logged &&
-            <div className="login-btn">
+            <div className="login-btn" onClick={handleClick}>
               <Link to={link}>
                 <div className="text login">{text}</div>
                 <span className="login"></span>

@@ -26,6 +26,7 @@ function Login() {
       if (password === realPassword) {
         localStorage.setItem('logged', true)
         setLogin(true)
+        toast.success("Vous êtes connecté avec succès !")
       } else {
         setLogin(false);
         toast.error('Veuillez réessayer à nouveau.')
@@ -42,7 +43,7 @@ function Login() {
 
   return (
     <div className="form-container">
-      {login && <Navigate to={"/dashboard"} />}
+      {login && <Navigate to={"/biens"} />}
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
         <h1 className="mobile-indicator">Connexion</h1>
         <label htmlFor="username">Nom d&apos;utilisateur :</label>

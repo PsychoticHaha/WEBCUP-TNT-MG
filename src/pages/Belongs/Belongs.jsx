@@ -24,7 +24,7 @@ function Belongs() {
   return (
     <>
       <a id="top"></a>
-      <Navbar text="Se connecter" />
+      <Navbar text={localStorage.getItem('logged') ? "Se déconnecter" : "Se connecter"} />
       <input type="text" id="search" placeholder="Rechercher..." value={chars} onChange={handleSearch} />
       <section className="shop-list">
         <Suspense fallback={<Loader />}>

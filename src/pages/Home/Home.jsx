@@ -10,7 +10,7 @@ function Home() {
   document.title = "Bienvenue sur le site de KEN"
   return (
     <>
-      <Navbar />
+      <Navbar text={localStorage.getItem('logged') ? "Se déconnecter" : "Se connecter"} />
       <main className="home-content" >
         <section className="hero">
           <div className="left">
