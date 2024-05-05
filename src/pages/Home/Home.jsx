@@ -3,18 +3,14 @@ import { lazy, Suspense } from "react";
 import Navbar from "../../components/Navbar";
 import './../../assets/stylesheets/home.scss'
 import Loader from "../../components/Loader.jsx";
-import ConnectedState from "../../components/ConnectedState.jsx";
-import useLS from "../../hooks/useLS.jsx";
 
 const ProductList = lazy(() => import("./ProductList.jsx"))
 
 function Home() {
-  const logged = useLS('logged', false);
 
   return (
     <>
       <Navbar />
-      {logged && <ConnectedState />}
       <main className="home-content" >
         <section className="hero">
           <div className="left">

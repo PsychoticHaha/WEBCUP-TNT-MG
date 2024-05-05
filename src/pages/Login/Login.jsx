@@ -26,7 +26,10 @@ function Login() {
         setLogin(true)
       } else {
         setLogin(false);
+        alert('Veuillez réessayer à nouveau.')
       }
+    } else {
+      alert('Veuillez réessayer à nouveau.')
     }
   }
 
@@ -39,11 +42,11 @@ function Login() {
     <div className="form-container">
       {login && <Navigate to={"/dashboard"} />}
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
-      <h1 className="mobile-indicator">Connexion</h1>
+        <h1 className="mobile-indicator">Connexion</h1>
         <label htmlFor="username">Nom d&apos;utilisateur :</label>
         <input type="text" id="username" name="username" value={username} onChange={handleChange} placeholder="ex : kenlebg@ego.fr" />
         <label htmlFor="pass">Mot de passe :</label>
-        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} placeholder="Entrez votre mot de passe..." />
+        <input type="password" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} placeholder="Entrez votre mot de passe..." />
         <div className="check show">
           <input type="checkbox" id="show" onChange={handleShow} />
           <label htmlFor="show" className="checkbox">Afficher mot de passe</label>
