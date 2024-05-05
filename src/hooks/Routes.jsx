@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Belongs from "../pages/Belongs/Belongs";
 import Live from "../pages/Live/Live";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import About from "../pages/About/About";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/a-propos",
-    element: <SignupLayout />
+    element: <About />
   },
   {
     path: "/dashboard",
