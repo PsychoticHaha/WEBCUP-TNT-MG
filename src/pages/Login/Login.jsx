@@ -15,13 +15,14 @@ function Login() {
     setPassword(e.target.value);
   }
 
-  const realUsername = "Randy";
-  const realPassword = "Mdp12345";
+  const realUsername = "Fanasina";
+  const realPassword = "a-la-va-vite";
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username === realUsername) {
       if (password === realPassword) {
+        localStorage.setItem('logged', true)
         setLogin(true)
       } else {
         setLogin(false);
@@ -30,25 +31,26 @@ function Login() {
   }
 
   const handleShow = () => {
-    let input = checkRef.current; 
+    let input = checkRef.current;
     input.type == "text" ? input.type = "password" : input.type = "text";
   }
 
   return (
     <div className="form-container">
-      {login && <Navigate to={"/dashbord"} />}
+      {login && <Navigate to={"/dashboard"} />}
       <form className="parent" id="login-form" action="" onSubmit={handleSubmit}>
+      <h1 className="mobile-indicator">Connexion</h1>
         <label htmlFor="username">Nom d&apos;utilisateur :</label>
         <input type="text" id="username" name="username" value={username} onChange={handleChange} placeholder="ex : kenlebg@ego.fr" />
         <label htmlFor="pass">Mot de passe :</label>
-        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} placeholder="Entrez votre mot de passe..."/>
+        <input type="text" ref={checkRef} id='pass' name="password" value={password} onChange={handleChangePwd} placeholder="Entrez votre mot de passe..." />
         <div className="check show">
           <input type="checkbox" id="show" onChange={handleShow} />
           <label htmlFor="show" className="checkbox">Afficher mot de passe</label>
         </div>
         <button>Se connecter</button>
       </form>
-    </div> 
+    </div>
   );
 }
 

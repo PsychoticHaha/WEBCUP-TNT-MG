@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navbar from "../../components/Navbar";
 import './../../assets/stylesheets/home.scss'
+import Loader from "../../components/Loader.jsx";
 
 const ProductList = lazy(() => import("./ProductList.jsx"))
 
@@ -55,7 +56,7 @@ function Home() {
             <img src="/assets/images/home/friends.webp" loading="lazy" decoding='async' alt="Ken avec ses amis" />
           </div>
         </section>
-        <Suspense fallback={''}>
+        <Suspense fallback={<Loader />}>
           <ProductList />
         </Suspense>
       </main>

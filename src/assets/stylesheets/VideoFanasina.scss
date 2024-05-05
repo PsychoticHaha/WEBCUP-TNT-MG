@@ -1,0 +1,22 @@
+.video-container {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  h3 {
+    background-color: tomato;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  video {
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+  }
+}

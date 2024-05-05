@@ -8,6 +8,7 @@ const SingleItem = lazy(() => import("./SingleItem.jsx"))
 
 function Belongs() {
   document.title = "Mes biens | KEN"
+
   return (
     <>
       <Navbar text="Se connecter" />

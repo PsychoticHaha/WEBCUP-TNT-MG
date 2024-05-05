@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Orders() {
-  const orders = useState(JSON.parse(localStorage.getItem('orders')));
+  const [orders] = useState(JSON.parse(localStorage.getItem('orders')));
 
   let totalPrice = 0;
   for (let i = 0; i < orders.length; i++) {

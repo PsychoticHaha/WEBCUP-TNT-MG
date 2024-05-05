@@ -68,3 +68,11 @@ section.shop-list {
     }
   }
 }
+
+@media screen and (max-width : 900px) {
+  section.shop-list {
+    .single-item {
+      width: 90%;
+    }
+  }
+}

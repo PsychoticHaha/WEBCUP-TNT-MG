@@ -50,6 +50,10 @@ div.main {
           min-height: 500px;
         }
 
+        .mobile-indicator {
+          display: none;
+        }
+
         form.parent {
           height: 100%;
           width: 100%;
@@ -83,6 +87,26 @@ div.main {
             &:focus {
               background-color: #971164;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 900px) {
+  div.main {
+    .content {
+      .left {
+        display: none;
+      }
+
+      .right {
+        width: 100%;
+
+        .form-container {
+          .mobile-indicator {
+            display: block;
           }
         }
       }

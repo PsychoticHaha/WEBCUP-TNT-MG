@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './../assets/stylesheets/navbar.scss';
 import Caddy from "./Caddy";
@@ -6,11 +6,23 @@ import Caddy from "./Caddy";
 function Navbar({ text = "S'identifier", link = "/connexion" }) {
   const [logged] = useState(localStorage.getItem('logged'));
 
+  useEffect(() => {
+
+  })
   return (
     <>
       <header>
         <div className="wrapper">
+          <Link className="logo-container" to={"/"}>
+            <div className="logo"></div>
+          </Link>
           <nav>
+            <Link to={"/"}>
+              <div className="text">
+                Acceuil
+              </div>
+              <span></span>
+            </Link>
             <Link to={"/vente-live"}>
               <div className="text">
                 Ventes en live
@@ -30,9 +42,7 @@ function Navbar({ text = "S'identifier", link = "/connexion" }) {
               <span></span>
             </Link>
           </nav>
-          <Link className="logo-container" to={"/"}>
-            <div className="logo"></div>
-          </Link>
+
 
           {/* IF LOGGED IN,  SHOW CADDY BUTTON */}
           {logged &&

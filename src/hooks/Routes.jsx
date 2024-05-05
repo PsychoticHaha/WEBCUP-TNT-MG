@@ -4,7 +4,8 @@ import SignupLayout from "../pages/SignUp/SignupLayout";
 import Home from "../pages/Home/Home";
 import Belongs from "../pages/Belongs/Belongs";
 import Test from "../../TEST/Test";
-import VideoRecorder from "../pages/VideoRecorder";
+import Live from "../pages/Live/Live";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -25,11 +26,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/vente-live",
-    element: <VideoRecorder />
+    element: <Live />
   },
   {
     path: "/a-propos",
     element: <SignupLayout />
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />
   },
   {
     path: "/test",

@@ -288,6 +288,8 @@ header {
   }
 
   .mobile-menu.show {
+    position: fixed;
+    left: 0;
     transform: translate(0);
     display: flex;
   }

@@ -4,6 +4,7 @@ import "./../../assets/stylesheets/Login-signUp.scss";
 
 function SignUp() {
   const [userMail, setUserMail] = useState('');
+  const [pseudo, setPseudo] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [login, setLogin] = useState(false);
@@ -11,39 +12,45 @@ function SignUp() {
   const handleChangeMail = (e) => {
     setUserMail(e.target.value);
   }
+  const handlePseudo = (e) => {
+    setPseudo(e.target.value);
+  }
   const handleChangePwd = (e) => {
     setPassword(e.target.value);
   }
 
   const handleConfirmPassword = (e) => {
-    if (password === confirmPassword) {
-      setConfirmPassword(e.target.value);
-    } else {
-      alert("Les deux mots de passe ne correspondent pas");
-    }
+    setConfirmPassword(e.target.value);
   }
+
   const handleSubmit = (e) => {
+    console.log('submittt');
     e.preventDefault();
-    if (password === confirmPassword && userMail) {
-      setLogin(true);
+    if (userMail && pseudo) {
+      if (password == confirmPassword) {
+        localStorage.setItem('logged', true);
+        setLogin(true);
+      } else {
+        alert("Les deux mots de passe ne correspondent pas");
+      }
     } else {
       setLogin(false);
     }
   }
-
   return (
     <div className="form-container signup">
-      {login && <Navigate to="/connexion" />}
-      <form className="parent" action="" onSubmit={handleSubmit}>
+      {login && <Navigate to="/dashboard" />}
+      <form className="parent" onSubmit={handleSubmit}>
+        <h1 className="mobile-indicator">Inscription</h1>
         <label htmlFor="pseudo">Entrez votre pseudo</label>
-        <input type="text" id="pseudo" placeholder="ex : KEN Le King" />
+        <input type="text" id="pseudo" value={pseudo} onChange={handlePseudo} placeholder="ex : KEN Le King" required />
         <label htmlFor="mail">Adresse e-mail :</label>
-        <input type="mail" id="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="ex : ken.bg@ego.fr" />
+        <input type="mail" id="mail" name="mail" value={userMail} onChange={handleChangeMail} placeholder="ex : ken.bg@ego.fr" required />
         <label htmlFor="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" value={password} onChange={handleChangePwd} placeholder="Entrez mot de passe ..." />
+        <input type="password" id="password" name="password" value={password} onChange={handleChangePwd} required placeholder="Entrez mot de passe ..." />
         <label htmlFor="passConfirm">Confirmation de mot de passe :</label>
-        <input type="password" id="passConfirm" name="passConfirm" value={confirmPassword} onChange={handleConfirmPassword} placeholder="Confirmez le mot de passe" />
-        <button type="submit"> S&apos;inscrire</button>
+        <input type="password" id="passConfirm" name="passConfirm" value={confirmPassword} required onChange={handleConfirmPassword} placeholder="Confirmez le mot de passe" />
+        <button> S&apos;inscrire</button>
       </form>
     </div>
   )
