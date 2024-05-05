@@ -63,56 +63,56 @@ const items = [
     img_path: "/assets/images/ken/corvette.webp"
   },
   {
-    id: 11,
+    id: 10,
     description: "Transformez votre espace en piste de danse avec notre tapis disco, illuminant chaque pas de lumière et d'énergie pour une ambiance de fête inoubliable.",
     price: 200,
     name: "Tapis disco",
     img_path: "/assets/images/ken/disco.webp"
   },
   {
-    id: 12,
+    id: 11,
     description: "Découvrez notre garde-robe, un espace de rangement élégant et fonctionnel pour organiser votre style avec facilité et raffinement.",
     price: 300,
     name: "Ma garde robe",
     img_path: "/assets/images/ken/garde-robe.webp"
   },
   {
-    id: 13,
+    id: 12,
     description: "On a eu beaucoup d'aventure avec notre Jeep, le compagnon robuste et polyvalent pour explorer les routes les plus difficiles avec style et confiance.",
     price: 10000,
     name: "Mon Jeep",
     img_path: "/assets/images/ken/jeep.webp"
   },
   {
-    id: 14,
+    id: 13,
     description: "On ne faisait pas que manger, sur cette table à manger. Elle vous servira mieux.",
     price: 29.99,
     name: "La table à manger",
     img_path: "/assets/images/ken/kitchen.webp"
   },
   {
-    id: 15,
+    id: 14,
     description: "K pour Ken, Barbie avait le sens du design, en effet. Ce collier est un bijou raffiné qui ajoute une touche de glamour et de sophistication à chaque tenue.",
     price: 150,
     name: "Mon K-ollier porte-bonheur",
     img_path: "/assets/images/ken/kollier.webp"
   },
   {
-    id: 17,
+    id: 15,
     description: "Et un autre collier magnifique avec un grand K.",
     price: 500,
     name: "Collier K en or massif",
     img_path: "/assets/images/ken/kolier2.webp"
   },
   {
-    id: 18,
+    id: 16,
     description: "La table n'était le seul endroit pour profiter de la vie. Voici notre lit que je vous vends.",
     price: 700,
     name: "Lit magnifique",
     img_path: "/assets/images/ken/lit-reel.webp"
   },
   {
-    id: 20,
+    id: 17,
     description: "Découvrez notre maison, un refuge chaleureux et accueillant où chaque détail est pensé pour créer des souvenirs inoubliables et des moments de bonheur en famille.",
     price: 5000000,
     name: "Villa Ken & Barbie",
@@ -123,42 +123,42 @@ const items = [
     ]
   },
   {
-    id: 21,
+    id: 18,
     description: "Élégance est mon mot d'ordre, ce miroir reflètera votre style et illuminera votre beauté.",
     price: 10,
     name: "Miroir",
     img_path: "/assets/images/ken/miror.webp"
   },
   {
-    id: 22,
+    id: 19,
     description: "Pensez-vous que mon corps d'athlète est venu tout seul ? Nooon.",
     price: 40,
     name: "Matériels de musculation",
     img_path: "/assets/images/ken/muscu.webp"
   },
   {
-    id: 23,
+    id: 20,
     description: "Ceci est presque un cadeau, réunissant fonctionnalité, confort et style pour une productivité accrue et un environnement professionnel inspirant.",
     price: 300,
     name: "Pack espace de travail",
     img_path: "/assets/images/ken/pack-bureau.webp"
   },
   {
-    id: 24,
+    id: 21,
     description: "Vous allez me dire que c'est seulement un T-shirt et un short, mais elle sent encore l'odeur de Barbie.",
     price: 20,
     name: "Ensemble T-shirt et Short",
     img_path: "/assets/images/ken/t-shirt bleu.webp"
   },
   {
-    id: 26,
+    id: 22,
     description: "Quoi de mieux pour se détendre que profiter d'une belle vue sur la mer ?",
     price: 900,
     name: "Canapé de terrasse",
     img_path: "/assets/images/ken/terrasse.webp"
   },
   {
-    id: 27,
+    id: 23,
     description: "Elle n'est pas moche, la photo n'est pas moche, sachez apprécier le vintage.",
     price: 20000,
     name: "Voiture Décapotable",

@@ -10,6 +10,7 @@ function Dashboard() {
       {!logged && <Navigate to="/connexion" />}
       <Navbar text="Se déconnecter" />
       <div className="main-content">
+        
       </div>
     </div>
   );

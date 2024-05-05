@@ -7,7 +7,7 @@ import Loader from "../../components/Loader.jsx";
 const ProductList = lazy(() => import("./ProductList.jsx"))
 
 function Home() {
-
+  document.title = "Bienvenue sur le site de KEN"
   return (
     <>
       <Navbar />

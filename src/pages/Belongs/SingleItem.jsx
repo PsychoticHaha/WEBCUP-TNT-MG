@@ -46,7 +46,7 @@ function SingleItem({ children, id, path, desc, price }) {
           <p className="price">{price} €</p>
         </div>
         <div className="cta" onClick={handleItemAdd}>
-          Ajouter au panier
+          Acheter
         </div>
       </div>
     </div>

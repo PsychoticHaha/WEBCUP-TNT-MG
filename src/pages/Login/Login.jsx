@@ -18,7 +18,7 @@ function Login() {
   }
 
   const realUsername = "Fanasina";
-  const realPassword = "a-la-va-vite";
+  const realPassword = "Merveilleux";
 
   const handleSubmit = (e) => {
     e.preventDefault();
