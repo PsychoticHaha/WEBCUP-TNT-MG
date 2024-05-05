@@ -3,7 +3,6 @@ import LoginLayout from './../pages/Login/LoginLayout'
 import SignupLayout from "../pages/SignUp/SignupLayout";
 import Home from "../pages/Home/Home";
 import Belongs from "../pages/Belongs/Belongs";
-import Test from "../../TEST/Test";
 import Live from "../pages/Live/Live";
 import Dashboard from "../pages/Dashboard/Dashboard";
 

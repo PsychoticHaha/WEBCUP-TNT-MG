@@ -1,10 +1,13 @@
+import { useState } from "react";
 import useLS from "../hooks/useLS";
 
 function ConnectedState() {
+  const [logged, setLogged] = useState(true)
 
   useLS('logged', false);
-  
+
   const handleLogout = () => {
+    setLogged(false)
     localStorage.setItem('logged', false);
   }
 
