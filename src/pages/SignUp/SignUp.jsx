@@ -30,6 +30,7 @@ function SignUp() {
     if (userMail && pseudo) {
       if (password == confirmPassword) {
         localStorage.setItem('logged', true);
+        toast.success('Inscription réussie ! Vous pouvez maintenant acheter.')
         setLogin(true);
       } else {
         toast.error("Les deux mots de passe ne correspondent pas");
@@ -40,7 +41,7 @@ function SignUp() {
   }
   return (
     <div className="form-container signup">
-      {login && <Navigate to="/dashboard" />}
+      {login && <Navigate to="/biens" />}
       <form className="parent" onSubmit={handleSubmit}>
         <h1 className="mobile-indicator">Inscription</h1>
         <label htmlFor="pseudo">Entrez votre pseudo</label>
