@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import Navbar from "../../components/Navbar";
 import './../../assets/stylesheets/home.scss'
+
+const ProductList = lazy(() => import("./ProductList.jsx"))
 
 function Home() {
   return (
@@ -49,31 +52,12 @@ function Home() {
             </div>
           </div>
           <div className="right">
-            <img src="/assets/images/home/friends.webp" loading="lazy" async alt="Ken avec ses amis" />
+            <img src="/assets/images/home/friends.webp" loading="lazy" decoding='async' alt="Ken avec ses amis" />
           </div>
         </section>
-        <section className="products">
-          <div className="text products-list">
-            <h1>Pourquoi ce site ? </h1>
-            <p>C&apos;est pour que vous puissiez acquérir ces choses de façon abordable.</p>
-            <p> <span className="dot"></span> En voici quelques échantillons : </p>
-          </div>
-          <div className="list-container">
-            <div className="left">
-              <img src="/assets/images/ken/corvette.webp" alt="La corvette de Barbie" />
-              <img src="/assets/images/ken/kitchen.webp" alt="Meubles de Ken" />
-            </div>
-            <div className="right">
-              <img src="/assets/images/ken/kollier.webp" alt="Collier K de Ken" className="kollier-k" />
-            </div>
-          </div>
-          <Link to={"/biens"} className="cta">
-            <div className="text">
-              Voir la liste complète.
-            </div>
-            <span className="filling"></span>
-          </Link>
-        </section>
+        <Suspense fallback={''}>
+          <ProductList />
+        </Suspense>
       </main>
       <div className="bottom-info">
         <p>Ce site est certifié &quot;écologique&quot; par :</p>
@@ -86,5 +70,6 @@ function Home() {
     </>
   );
 }
+
 
 export default Home;
