@@ -1,35 +1,60 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./../../assets/stylesheets/dispute.scss";
+import Navbar from './../../components/Navbar'
 
 
 function About() {
   return (
-    <div>
-      <main>
-        <section>
-          <img src="/assets/images/home/dispute.webp" alt="image de dispute" />
-          <p>Alors que le soleil se couchait sur la magnifique villa de Barbie, une dispute éclata entre elle et Ken. Les voix se sont élevées, emplies de frustration et de ressentiment. Barbie reprochait à Ken son manque d'attention et son attitude désinvolte, tandis que Ken se sentait incompris et dévalorisé.
-
-            Les mots étaient tranchants comme des lames de rasoir, chacun lançant des accusations douloureuses et des reproches amers. Leur belle histoire d'amour semblait s'effriter sous le poids de leurs querelles incessantes.
-
-            Les regards froids et les silences pesants ont remplacé les tendres gestes et les doux mots d'affection. La tension flottait dans l'air, palpable et étouffante.
-
-            Pourtant, malgré la colère et la frustration, au fond de leurs cœurs, Barbie et Ken savaient qu'ils s'aimaient toujours. Ils savaient que la route vers la réconciliation serait difficile, mais ils étaient prêts à faire les efforts nécessaires pour retrouver l'harmonie et la complicité qui avaient autrefois uni leurs cœurs.</p>
-        </section>
-        <section>
+    <>
+      <Navbar />
+      <section className="about-sections">
+        <div className="left">
+          <img src="/assets/images/home/dispute.webp" alt="Barbie et Ken se disputent" />
+        </div>
+        <div className="right">
+          <div className="text">
+            <h1>Comment tout a commencé ?</h1>
+            <br />
+            <p>
+              Elle et moi, nos voix s&apos;élèvent en tempête, échos de nos désirs brisés, tourbillon d&apos;amour et de colère, chaque mot un coup de vent dans notre océan de passion.
+            </p>
+            <p>
+              Les moqueries faisaient parties de notre vie malgré le sentiment puissant qui nous unissait.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="about-sections">
+        <div className="left">
           <img src="/assets/images/home/ken-torture.webp" alt="Image de torture" />
-          <p>Et l'histoire ne s'arrêtait pas là, Barbie a eu la mauvaise idée d'attacher Ken et de le torturer d'une drôle
-            de manière en brulant quelques vêtements sous ses yeux. Après cela, elle l'a dettaché et elle est partie pour joindre son amant.
-            Ken errait seul dans la grande maison vide, son cœur lourd de chagrin après sa dispute avec Barbie. Les souvenirs de leur amour autrefois si vibrant résonnaient douloureusement dans son esprit, contrastant cruellement avec la froide réalité de leur désaccord.
-
-            Dans la chambre autrefois remplie de rires et de tendresse, il se retrouvait maintenant seul, entouré de silence. Les vêtements brûlés par Barbie étaient là, témoins muets de leur querelle déchirante.
-
-            Le regard perdu dans le vide, Ken se sentait dévasté. Il regrettait chaque mot prononcé dans la chaleur de l'instant, chaque geste impulsif qui avait blessé Barbie. Il aurait donné n'importe quoi pour revenir en arrière, pour effacer la douleur dans ses yeux et retrouver leur amour perdu.
-
-            Mais malgré sa tristesse, une lueur d'espoir persistait dans le cœur de Ken. Il savait que l'amour véritable pouvait surmonter les obstacles les plus difficiles. Avec le temps et la patience, il espérait pouvoir reconstruire ce lien brisé et retrouver le bonheur qu'ils avaient autrefois partagé.
-          </p>
-        </section>
-      </main>
-    </div>
+        </div>
+        <div className="right">
+          <div className="text">
+            <h1>L&apos;histoire ne s&apos;arrête pas là !</h1>
+            <p>Barbie a eu la mauvaise idée de me torturer d&apos;une drôle de manière en brulant quelques vêtements sous mes yeux. Après ça, elle m&apos;a detaché et elle est partie pour rejoindre son amant.
+            </p>
+            <p>
+              Dans la chambre autrefois remplie de rires et de tendresse, je me retrouvais  seul, entouré de silence.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="about-sections">
+        <div className="left">
+          <img src="/assets/images/home/surprise.webp" alt="Barbie surprise" />
+        </div>
+        <div className="right">
+          <div className="text">
+            <h1>Quand elle est revenue, j&apos;étais déjà prêt à partir. </h1>
+            <p>Le divorce n'était pas loin d'éclater entre nous à ce moment-là. C'est aussi pendant cette période que j'ai demandé le divorce et que j'ai fait construire ce site par l'équipe TNT MG.
+            </p>
+            <p>
+              Alors, achetez ces choses pour que je puisse passer à autre chose.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 

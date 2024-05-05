@@ -1,6 +1,48 @@
-section {
+section.about-sections {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   padding: 20px;
 
+  .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    img {
+      width: 60%;
+      border-radius: 15px;
+    }
+  }
+
+  .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    .text {
+      width: 85%;
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 900px) {
+  section.about-sections {
+    flex-direction: column;
+    gap: 25px;
+
+    .left {
+      width: 95%;
+    }
+
+    .right {
+      width: 95%;
+      justify-content: center;
+    }
+  }
 }
