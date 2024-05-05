@@ -36,10 +36,6 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />
   },
-  {
-    path: "/test",
-    element: <Test />
-  },
 ])
 export default function Routes({ children }) {
 

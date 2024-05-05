@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './../assets/stylesheets/navbar.scss';
 import Caddy from "./Caddy";
+import useLS from "../hooks/useLS";
 
 function Navbar({ text = "S'identifier", link = "/connexion" }) {
-  const [logged] = useState(localStorage.getItem('logged'));
+  const logged=useLS('logged', false);
 
   useEffect(() => {
 
